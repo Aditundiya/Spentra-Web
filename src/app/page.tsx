@@ -42,7 +42,7 @@ const steps = [
   {
     number: '01',
     title: 'Log what you spend',
-    description: 'Open the app, tap the plus button, enter the amount. Done in under five seconds. You can even add a note or photo if you want.',
+    description: 'Open the app, tap the plus button, enter the amount and pick a category. Done in under five seconds.',
   },
   {
     number: '02',
