@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useRef, useEffect } from 'react';
+import Image from 'next/image';
 
 interface HeroProps {
   badge?: string;
@@ -140,6 +141,11 @@ export default function Hero({ badge, headline, subtitle, primaryButton, seconda
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70" />
 
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-white px-6">
+        {/* Logo */}
+        <div className="mb-6 animate-fade-in-down">
+          <Image src="/favicon.png" alt="Spentra" width={72} height={72} className="rounded-2xl shadow-lg shadow-indigo-500/20" />
+        </div>
+
         {/* Badge */}
         {badge && (
           <div className="mb-8 animate-fade-in-down">
